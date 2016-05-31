@@ -1,0 +1,12 @@
+title: 'The Golden Helmt'
+description: 'A blog. A witty description.'
+url: 'aqsalose.kapsi.fi'
+baseurl: '/blog'
+header_description:
+    - First paragraph
+    - Second long long long long paragraph
+
+twitter_username: 'aqsalose'
+github_username: 'aa-m-sa'
+email: 'a.salosensaari( a t )gmail( dot )com'
+

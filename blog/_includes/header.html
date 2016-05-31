@@ -2,7 +2,18 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.data.global.baseurl }}/">{{ site.data.global.title }}</a>
+    <img class="site-header-image" src="{{site.data.global.baseurl }}/images/helmet_painting.jpg" alt="Header image" height="200">
+
+    <div class="site-title-wrapper">
+      <a class="site-title" href="{{ site.data.global.baseurl }}/">{{ site.data.global.title }}</a>
+
+      <div class="site-header-description">
+        {% for my_par in site.data.global.header_description %}
+          <p>{{ my_par }}</p>
+        {% endfor %}
+      </div>
+    </div>
+
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,6 +25,8 @@
       </a>
 
       <div class="trigger">
+        <a class="page-link" href="{{site.data.global.baseurl}}/">Blog</a>
+        <a class="page-link" href="https://aqsalose.kapsi.fi">Home</a>
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | prepend: site.data.global.baseurl }}">{{ my_page.title }}</a>
