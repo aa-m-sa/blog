@@ -20,8 +20,7 @@ The theme you see is based on the default base Jekyll theme
 
 ## Image source for header photo
 
-Original photograph by [Hajotthu](https://commons.wikimedia.org/wiki/User:Hajotthu) freely [available here (link)](https://commons.wikimedia.org/wiki/File:Mann_mit_dem_Goldhelm.jpg) in [Wikimedia Commons](https://commons.wikimedia.org/wiki/Commons:Welcome).
-
+Gustave Doré: Don Quijote de La Mancha and Sancho Panza, 1863, [from here](https://commons.wikimedia.org/wiki/File:Don_Quijote_and_Sancho_Panza.jpg).
 
 
 
