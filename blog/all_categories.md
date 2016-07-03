@@ -4,5 +4,6 @@ shorttitle: All categories
 tagline: All categories
 archive: false
 layout: archive_all
+permalink: /all_categories/
 ---
 
