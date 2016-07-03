@@ -1,0 +1,20 @@
+academia: [academia.general]
+applied: [applied.general, applied.CV, applied.AI, applied.ML, applied.datasci, applied.stats,
+  applied.numerical, applied.timeseries, applied.neural, applied.deep, applied.NLP,
+  applied.compusoc]
+blogging: [blogging.general]
+blogs: [blogs.general, blogs.FI, blogs.EN]
+books: [books.fiction, books.fact]
+culture: [culture.science, culture.scifi, culture.fantasy, culture.comics, culture.webcomics,
+  culture.films, culture.lit, culture.genre, culture.internet, culture.roguelikes,
+  culture.dwarves]
+econ: [econ.gametheory, econ.general]
+history: [history.general]
+math: [math.analysis, math.calc, math.edu, math.prob, math.complex, math.linalg, math.func,
+  math.pop, math.general]
+random: [uncategorized]
+sci: [sci.theorphys, sci.pop, sci.open, sci.community, sci.general]
+software: [software.python, software.scipy, software.matplotlib, software.web, software.JS,
+  software.d3js, software.cpp, software.opencv]
+theorcompsci: [theorcompsci.algo, theorcompsci.DAA, theorcompsci.compu]
+uncateg: [test]
