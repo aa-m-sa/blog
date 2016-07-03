@@ -11,7 +11,7 @@ culture: [culture.science, culture.scifi, culture.fantasy, culture.comics, cultu
 econ: [econ.gametheory, econ.general]
 history: [history.general]
 math: [math.analysis, math.calc, math.edu, math.prob, math.complex, math.linalg, math.func,
-  math.pop, math.general]
+  math.pop, math.general, math.lol]
 random: [uncategorized]
 sci: [sci.theorphys, sci.pop, sci.open, sci.community, sci.general]
 software: [software.python, software.scipy, software.matplotlib, software.web, software.JS,

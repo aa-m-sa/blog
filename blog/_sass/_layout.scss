@@ -313,6 +313,20 @@
 /** archive
  *
  */
+.archive-tag-list-container {
+    padding-left: 0.5*$spacing-unit;
+}
+
+.archive-tag-name {
+    //margin-left: $spacing-unit;
+}
+
+.archive-pre {
+    font-size: $small-font-size;
+    color: $grey-color;
+    min-width: 150px;
+    float: left;
+}
 
 .archive-desc {
     font-size: $small-font-size;
@@ -321,6 +335,6 @@
 }
 
 .archive-tag-list {
-    margin-left: 0;
     list-style: none;
+    //margin-left: $spacing-unit;
 }

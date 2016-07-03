@@ -10,7 +10,8 @@ layout: default
 
   {% if site.data.tags[page.category] %}
   {% for site_tag in site.data.tags[page.category] %}
-    <h3 class="tag-name"> {{site_tag}} : </h3>
+    <h3 class="archive-tag-name"> {{site_tag}} : </h3>
+    <ul  class="archive-tag-list">
     {% for post in site.posts %}
       {% for post_categ in post.categories %}
         {% if post_categ == page.category %}
@@ -18,12 +19,14 @@ layout: default
             {% if post_tag == site_tag %}
               <li class="archive-tag-list">
                 <p>
-                  <span class="archive-desc">{{ site_tag }} &gt; </span>
+                  <span class="archive-pre">{{ site_tag }} </span>
+                  <span class="post-meta"> &gt;  {{ post.date | date: "%b %-d, %Y" }} &gt;</span>
                   <a class="post-small-link" href="{{ post.url | prepend: site.data.global.baseurl }}">{{ post.title }}</a>
 
-                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
                   {% if post.excerpt %}
-                    <span class="archive-desc">{{ post.excerpt | strip_html | truncatewords:10 }}</span>
+                    <br/>
+                    <span class="archive-pre"> &nbsp; </span>
+                    <span class="archive-desc">... {{ post.excerpt | strip_html | truncatewords:12 }}</span>
                   {% endif %}
                 </p>
               </li>
@@ -32,32 +35,34 @@ layout: default
         {% endif %}
       {% endfor %}
     {% endfor %}
+    </ul>
   {% endfor %}
-  {% else %}
-    <p>No tags associated with this category.</p>
   {% endif %}
 
 
-  <h3>all items in this category:</h3>
+  <h3 class="archive-tag-name">all items in this category:</h3>
 
-  <div class="post-list">
+  <ul  class="archive-tag-list">
     {% for post in site.posts %}
       {% for category in post.categories %}
         {% if category == page.category %}
           <li>
             <p>
+              <span class="archive-pre"> {{ s_categ }}(.all) </span>
+              <span class="post-meta"> &gt;  {{ post.date | date: "%b %-d, %Y" }} &gt;</span>
               <a class="post-small-link" href="{{ post.url | prepend: site.data.global.baseurl }}">{{ post.title }}</a>
 
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            {% if post.excerpt %}
-              <span class="archive-desc">{{ post.excerpt | strip_html | truncatewords:10 }}</span>
-            {% endif %}
+              {% if post.excerpt %}
+                <br/>
+                <span class="archive-pre"> &nbsp; </span>
+                <span class="archive-desc">... {{ post.excerpt | strip_html | truncatewords:12 }}</span>
+              {% endif %}
             </p>
           </li>
         {% endif %}
       {% endfor %}
     {% endfor %}
-  </div>
+  </ul>
 
 </article>
 
