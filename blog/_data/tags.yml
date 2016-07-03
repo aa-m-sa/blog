@@ -1,1 +1,72 @@
-math: ['math.analysis']
+math: [
+    'math.analysis',
+    'math.calc',
+    'math.edu',
+    'math.prob',
+    'math.complex',
+    'math.linalg',
+    'math.func',
+    'math.pop',
+    'math.general'
+]
+applied: [
+    'applied.general',
+    'applied.CV',
+    'applied.AI',
+    'applied.ML',
+    'applied.datasci',
+    'applied.stats',
+    'applied.numerical',
+    'applied.timeseries',
+    'applied.neural'
+]
+econ: [
+    'econ.gametheory',
+    'econ.general'
+]
+sci: [
+    'sci.theorphys',
+    'sci.pop',
+    'sci.open',
+    'sci.community',
+    'sci.general'
+]
+culture: [
+    'culture.science',
+    'culture.scifi',
+    'culture.fantasy',
+    'culture.comics',
+    'culture.webcomics',
+    'culture.films',
+    'culture.lit',
+    'culture.genre',
+    'culture.internet'
+]
+theorcompsci: [
+    'theorcompsci.algo',
+    'theorcompsci.DAA',
+    'theorcompsci.compu'
+]
+software: [
+    'software.python',
+    'software.scipy',
+    'software.matplotlib',
+    'software.web',
+    'software.JS',
+    'software.d3js',
+    'software.cpp',
+    'software.opencv'
+]
+blogging: [
+    'blogging.general'
+]
+blogs: [
+    'blogs.general'
+]
+random: [
+    'uncategorized'
+]
+books: [
+    'books.fiction',
+    'books.fact'
+]
