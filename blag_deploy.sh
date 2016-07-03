@@ -11,6 +11,7 @@ set -e
 # assumes env variable BLAG_DEPLOY_TGT
 
 if [ -z "$BLAG_DEPLOY_TGT"]
+then
     echo "needs target"
     exit 1
 fi
