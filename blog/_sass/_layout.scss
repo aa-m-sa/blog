@@ -3,7 +3,7 @@
  */
 .site-header {
     border-top: 2px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-dark;
+    //border-bottom: 1px solid $grey-color-dark;
     min-height: 215px;
 
     // Positioning context for the mobile navigation icon
@@ -190,6 +190,26 @@
     }
 }
 
+/**
+ * Page category bar / heading thingy
+ */
+
+.page-category-bar {
+    padding: 10px;
+    border-top: 1px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-dark;
+
+    .category-link {
+        color: $text-color;
+        line-height: $base-line-height;
+        font-size: 20px;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
 
 
 /**
@@ -222,6 +242,11 @@
     font-size: 24px;
 }
 
+.post-small-link {
+    font-size: $base-font-size;
+    font-weight: bold;
+}
+
 
 
 /**
@@ -229,17 +254,25 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
-}
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+    .post-title {
+        font-size: 42px;
+        letter-spacing: -1px;
+        line-height: 1;
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
+        @include media-query($on-laptop) {
+            font-size: 36px;
+        }
+    }
+
+    .post-tagline {
+        font-size: $small-font-size;
+        line-height: 1;
+        color: $grey-color;
+        font-style: italic;
     }
 }
+
 
 .post-content {
     margin-bottom: $spacing-unit;
@@ -267,4 +300,27 @@
             font-size: 18px;
         }
     }
+}
+
+.post-footer {
+
+    font-size: $small-font-size;
+    line-height: 1;
+    color: $grey-color;
+    font-style: italic;
+}
+
+/** archive
+ *
+ */
+
+.archive-desc {
+    font-size: $small-font-size;
+    color: $grey-color;
+    font-style: italic;
+}
+
+.archive-tag-list {
+    margin-left: 0;
+    list-style: none;
 }

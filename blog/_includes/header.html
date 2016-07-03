@@ -27,11 +27,7 @@
       <div class="trigger">
         <a class="page-link" href="{{site.data.global.baseurl}}/">Blog</a>
         <a class="page-link" href="https://aqsalose.kapsi.fi">Who?</a>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.data.global.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <a class="page-link" href="{{site.data.global.baseurl}}/about/">About</a>
       </div>
     </nav>
 
