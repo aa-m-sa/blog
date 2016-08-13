@@ -6,9 +6,18 @@ permalink: /about/
 
 ## ...this blog, in general?
 
-My bookmark archive of various links (ranging from ''huh, that's interesting, I'll read that later'' to ''this is a great reference'' and even ''AMAZING!!'') has grown so large it's practically unmanageable.
+### tl;dr?
 
-As a solution, from this point on I intend to collect all those newspaper articles, arxiv preprint pdfs, and real blog posts here, and make heavy use of Jekyll's tag and category mechanism to make this catalogue an *actually useful resource* to me, instead of the current kitchen sink of a Firefox bookmark folder.
+Barring surprisingly fast advances in neuroscience, cybernetic memory implants remain science fiction.
+
+However, a blog with categories and tags serves as a perfectly good substitute for an external memory bank.
+
+### Longer
+
+My Firefox bookmark folder of various links (ranging from ''huh, that's interesting, I'll read that later'' to ''this is a great reference'' and even ''SIMPLY AMAZING!!'') has grown so large it's practically unmanageable.
+
+As a solution, from this point on I intend to collect all those newspaper articles, arxiv preprint pdfs, and real blog posts here, and make heavy use of Jekyll's tag and category mechanism to make this catalogue an *actually useful resource*. I'm publishing this blog on public internet because why not.
+
 Lightweight, static, markdown-and-YAML-metadata-block based blog platform seems good enough tool for this purpose, as a side-product I have now myself a new blog, and I see no reason why it couldn't live in the public web.
 
 In other words, this 'blog' will (hopefully) a mainly link-blog (if such things exist anymore in the age of Twitter?),
