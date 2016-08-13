@@ -22,11 +22,12 @@
     width: 50%;
 
     .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
+        font-family: $title-font-family;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -1px;
+        margin-bottom: 0;
 
     &,
     &:visited {
@@ -62,6 +63,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-family: $title-font-family;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -203,6 +205,7 @@
         color: $text-color;
         line-height: $base-line-height;
         font-size: 20px;
+        font-family: $title-font-family;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
