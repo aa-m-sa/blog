@@ -8,61 +8,71 @@ layout: default
     <p class="post-tagline">{{ page.tagline }}</p>
   </header>
 
+  <p>Tags under this category:</p>
+
   {% if site.data.tags[page.category] %}
   {% for site_tag in site.data.tags[page.category] %}
-    <h3 class="archive-tag-name"> {{site_tag}} : </h3>
-    <ul  class="archive-tag-list">
-    {% for post in site.posts %}
-      {% for post_categ in post.categories %}
-        {% if post_categ == page.category %}
-          {% for post_tag in post.tags %}
-            {% if post_tag == site_tag %}
-              <li class="archive-tag-list">
-                <p>
-                  <span class="archive-pre">{{ site_tag }} </span>
-                  <span class="post-meta"> &gt;  {{ post.date | date: "%b %-d, %Y" }} &gt;</span>
-                  <a class="post-small-link" href="{{ post.url | prepend: site.data.global.baseurl }}">{{ post.title }}</a>
+    <div class="archive-tag-area" id="{{site_tag}}">
+      <div class="archive-tag-clickable">
+        <h3 class="archive-tag-name"> {{site_tag}} : </h3>
+      </div>
+      <ul class="archive-tag-list" style="display:none;">
+      {% for post in site.posts %}
+        {% for post_categ in post.categories %}
+          {% if post_categ == page.category %}
+            {% for post_tag in post.tags %}
+              {% if post_tag == site_tag %}
+                <li class="archive-tag-list">
+                  <p>
+                    <span class="archive-pre">{{ site_tag }} </span>
+                    <span class="post-meta"> &gt;  {{ post.date | date: "%b %-d, %Y" }} &gt;</span>
+                    <a class="post-small-link" href="{{ post.url | prepend: site.data.global.baseurl }}">{{ post.title  | truncatewords:8 }}</a>
 
-                  {% if post.excerpt %}
-                    <br/>
-                    <span class="archive-pre"> &nbsp; </span>
-                    <span class="archive-desc">... {{ post.excerpt | strip_html | truncatewords:12 }}</span>
-                  {% endif %}
-                </p>
-              </li>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
+                    {% if post.excerpt %}
+                      <br/>
+                      <span class="archive-pre"> &nbsp; </span>
+                      <span class="archive-desc">... {{ post.excerpt | strip_html | truncatewords:10 }}</span>
+                    {% endif %}
+                  </p>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
-    </ul>
+      </ul>
+    </div>
   {% endfor %}
   {% endif %}
 
 
-  <h3 class="archive-tag-name">all items in this category:</h3>
+  <div class="archive-tag-area" id="all_items">
+    <div class="archive-tag-clickable">
+      <h3 class="archive-tag-name"> all items in this category : </h3>
+    </div>
 
-  <ul  class="archive-tag-list">
-    {% for post in site.posts %}
-      {% for category in post.categories %}
-        {% if category == page.category %}
-          <li>
-            <p>
-              <span class="archive-pre"> {{ s_categ }}(.all) </span>
-              <span class="post-meta"> &gt;  {{ post.date | date: "%b %-d, %Y" }} &gt;</span>
-              <a class="post-small-link" href="{{ post.url | prepend: site.data.global.baseurl }}">{{ post.title }}</a>
+    <ul  class="archive-tag-list" style="display:none;">
+      {% for post in site.posts %}
+        {% for category in post.categories %}
+          {% if category == page.category %}
+            <li>
+              <p>
+                <span class="archive-pre"> {{ s_categ }}(.all) </span>
+                <span class="post-meta"> &gt;  {{ post.date | date: "%b %-d, %Y" }} &gt;</span>
+                <a class="post-small-link" href="{{ post.url | prepend: site.data.global.baseurl }}">{{ post.title  | truncatewords:8 }}</a>
 
-              {% if post.excerpt %}
-                <br/>
-                <span class="archive-pre"> &nbsp; </span>
-                <span class="archive-desc">... {{ post.excerpt | strip_html | truncatewords:12 }}</span>
-              {% endif %}
-            </p>
-          </li>
-        {% endif %}
+                {% if post.excerpt %}
+                  <br/>
+                  <span class="archive-pre"> &nbsp; </span>
+                  <span class="archive-desc">... {{ post.excerpt | strip_html | truncatewords:10 }}</span>
+                {% endif %}
+              </p>
+            </li>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
-  </ul>
+    </ul>
+</div>
 
 </article>
 

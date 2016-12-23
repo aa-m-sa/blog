@@ -327,8 +327,31 @@
     padding-left: 0.5*$spacing-unit;
 }
 
+.archive-tag-clickable { 
+
+    //width: 100%;
+    text-align: center;
+    height: 20px;
+
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    min-width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $text-color;
+    border-radius: 5px;
+    color: $grey-color-dark;
+
+    &:hover{
+        color: $text-color;
+        background-color: $grey-color-light;
+    }
+}
+
 .archive-tag-name {
-    //margin-left: $spacing-unit;
+    vertical-align: middle;
+    line-height: 20px;
 }
 
 .archive-pre {
