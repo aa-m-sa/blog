@@ -212,6 +212,13 @@
             margin-right: 15px;
         }
     }
+    .category-link-desc {
+        @extend .category-link;
+        color: $grey-color;
+        font-size: $small-font-size;
+    }
+
+
 }
 
 

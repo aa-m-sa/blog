@@ -1,6 +1,7 @@
 <div class="wrapper">
   <nav class="page-category-bar">
     <a href="{{site.baseurl}}/" class="category-link">Posts</a>
+    <span class="category-link-desc"> Categories: </span>
     {% for arch_page in site.pages %}
       {% if arch_page.archive %}
         {% if arch_page.shorttitle %}
@@ -10,7 +11,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-    <a href="{{site.baseurl}}/all_categories/" class="category-link">All categories</a>
+    <a href="{{site.baseurl}}/all_categories/" class="category-link">All</a>
   </nav>
 
 </div>
