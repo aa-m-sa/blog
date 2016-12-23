@@ -19,7 +19,7 @@ layout: default
           <div class="archive-tag-clickable">
             <h3 class="archive-tag-name"> {{site_tag}} : </h3>
           </div>
-          <ul  class="archive-tag-list" style="display:none;" >
+          <ul  class="archive-tag-list" style="" >
             {% for post in site.posts %}
               {% for post_categ in post.categories %}
                 {% if post_categ == s_categ %}
@@ -52,7 +52,7 @@ layout: default
         <div class="archive-tag-clickable">
           <h3 class="archive-tag-name"> all items in {{s_categ}}: </h3>
         </div>
-        <ul  class="archive-tag-list" style="display:none;">
+        <ul  class="archive-tag-list" style="">
           {% for post in site.posts %}
             {% for post_categ in post.categories %}
               {% if post_categ == s_categ %}
