@@ -64,9 +64,10 @@ def main():
 
     try:
         print message
-        status = api.PostTweet(message)
-    except:
+        status = api.PostUpdate(message)
+    except Exception as e:
         print "error: problem with PostTweet"
+        print e
         sys.exit(2)
 
 if __name__ == "__main__":
