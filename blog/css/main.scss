@@ -34,15 +34,43 @@
     font-style: italic;
 }
 
-// Our variables
-$base-font-family: "PT Sans", Arial, sans-serif;
-$title-font-family: "Gudea", Arial, sans-serif;
+@font-face{
+    font-family: "Libre Baskerville";
+    src: url('fonts/LibreBaskerville/LibreBaskerville-Regular.ttf');
+}
 
-$base-font-size:   16px;
+@font-face{
+    font-family: "Libre Baskerville";
+    src: url('fonts/LibreBaskerville/LibreBaskerville-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Libre Baskerville";
+    src: url('fonts/LibreBaskerville/LibreBaskerville-Bold.ttf');
+    font-weight: bold;
+}
+
+// Our variables
+//$base-font-family: "PT Sans", Arial, sans-serif;
+$base-font-family: "Libre Baskerville", Times New Roman, serif;
+
+//$title-font-family: "Gudea", Arial, sans-serif;
+$title-font-family: "Libre Baskerville", Times New Roman, serif;
+
+$catbar-font-family: "Gudea", Arial, sans-serif;
+$navbar-font-family: "Gudea", Arial, sans-serif;
+$blogtitle-font-family: "Gudea", Arial, sans-serif;
+
+//$base-font-size:   16px;
+$base-font-size:   14px;
+//$base-font-weight: 400;
 $base-font-weight: 400;
-$heading-font-weight: 400;
+//$heading-font-weight: 400;
+$heading-font-weight: 600;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+//$base-line-height: 1.5;
+$base-line-height: 2.0;
 
 $spacing-unit:     30px;
 

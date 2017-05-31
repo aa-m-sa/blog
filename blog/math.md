@@ -1,8 +1,8 @@
 ---
 title: Mathematics
 shorttitle: Math
-tagline: Maths from not predominantly applied viewpoint
-archive: true
+tagline: All kinds of mathematics related posts
+archive: yes
 layout: archive
 category: math
 permalink: /math/
