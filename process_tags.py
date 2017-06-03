@@ -41,8 +41,9 @@ def main_unsorted():
         # else
         cur = ''
         prev = ''
-        categories = ['unsorted_links']
-        tags = []
+        categories = set()
+        categories.add('unsorted_links')
+        tags = set()
         for l in cts_lines:
             prev = cur
             cur = l.strip()
@@ -55,10 +56,10 @@ def main_unsorted():
                 ps = p.split('.')
                 if len(ps) > 0:
                     # lone category
-                    categories.append(ps[0].strip())
+                    categories.add(ps[0].strip())
                 if len(ps) == 2:
                     # category.tag
-                    tags.append(p.strip())
+                    tags.add(p.strip())
         block_limit = None
         cts_lines_filt = []
         for i, l in enumerate(cts_lines):
