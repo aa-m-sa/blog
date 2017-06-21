@@ -16,7 +16,10 @@ layout: default
 
         <div class="post-content" itemprop="articleBody">
           {{ post.excerpt }}
+
+          <a class="post-link" href="{{ post.url | prepend: site.data.global.baseurl }}">...</a>
         </div>
+
       </li>
     {% endfor %}
   </ul>
