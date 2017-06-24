@@ -16,8 +16,9 @@ layout: default
 
         <div class="post-content" itemprop="articleBody">
           {{ post.excerpt }}
-
-          <a class="post-link" href="{{ post.url | prepend: site.data.global.baseurl }}">...</a>
+          <p>
+            <i><a href="{{ post.url | prepend: site.data.global.baseurl }}">more ...</a></i>
+          </p>
         </div>
 
       </li>
